@@ -179,8 +179,6 @@ class _Message extends BaseView
                 @$message.addClass 'messenger-clickable'
 
     undelegateEvents: ->
-        super
-
         @$message?.removeClass 'messenger-clickable'
 
     parseActions: ->
@@ -257,8 +255,6 @@ class _Message extends BaseView
 
 class RetryingMessage extends _Message
     initialize: ->
-        super
-
         @_timers = {}
 
     cancel: ->
@@ -278,8 +274,6 @@ class RetryingMessage extends _Message
         @$message?.removeClass 'messenger-retry-soon messenger-retry-later'
 
     render: ->
-        super
-
         do @clearTimers
 
         for name, action of @options.actions

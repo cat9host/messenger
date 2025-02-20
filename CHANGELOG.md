@@ -1,3 +1,8 @@
+1.5.1
+-----
+
+- Grunt update, build update, added proper .gitignore and publishing
+
 1.4.2
 -----
 

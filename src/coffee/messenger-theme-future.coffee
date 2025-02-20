@@ -13,7 +13,7 @@ spinner_template = '''
 
 class FutureMessage extends window.Messenger.Message
     template: (opts) ->
-        $message = super
+        $message = super(opts)
 
         $message.append $ spinner_template
 
